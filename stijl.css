@@ -16,6 +16,8 @@ ul {
 li {
   display: inline;
   text-align: center;
+  color: white;
+  text-decoration: none;
 }
 </style>
 </head>
