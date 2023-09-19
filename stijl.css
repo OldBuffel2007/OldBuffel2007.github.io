@@ -37,7 +37,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: rgba(0, 255, 136, 0.718);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
