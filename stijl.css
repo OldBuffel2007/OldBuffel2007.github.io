@@ -70,3 +70,11 @@ footer {
     padding: 20px; /* Ruimte rondom de inhoud in de footer */
     text-align: center; /* Tekst gecentreerd in de footer */
 }
+
+.footer {
+  background-color:lightgrey;
+  padding: 3px;
+  color: black;
+  text-align: center;
+}
+/*Hiermee geef ik mijn footer aan*/
