@@ -34,5 +34,24 @@
         
         </div>
 
+        <h2>Binary Bonanza</h2>
+    <p>Voer een binair getal in om naar decimaal te converteren:</p>
+    <input type="text" id="binaryInput">
+    <button onclick="convertBinaryToDecimal()">Converteren</button>
+    <p id="result"></p>
+
+    <script>
+        function convertBinaryToDecimal() {
+            const binaryInput = document.getElementById("binaryInput").value;
+            const decimalResult = parseInt(binaryInput, 2);
+
+            if (!isNaN(decimalResult)) {
+                document.getElementById("result").textContent = `Het decimale equivalent van ${binaryInput} is ${decimalResult}.`;
+            } else {
+                document.getElementById("result").textContent = "Ongeldige invoer. Voer een geldig binair getal in.";
+            }
+        }
+    </script>
+
     </body>
 </html>
