@@ -1,0 +1,76 @@
+body {
+
+    background-color: rgb(192, 233, 247);
+    text-align: center;
+}
+
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgba(171, 250, 213, 0.718);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #270505;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+li {
+  text-align: left;
+}
+
+footer {
+    background-color: #000000; /* Blauwe achtergrondkleur */
+    color: #ffffff; /* Witte tekstkleur */
+    padding: 20px; /* Ruimte rondom de inhoud in de footer */
+    text-align: center; /* Tekst gecentreerd in de footer */
+}
+
+table{
+  text-align: center;
+}
