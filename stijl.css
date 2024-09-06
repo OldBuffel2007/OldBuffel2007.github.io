@@ -75,6 +75,10 @@ table{
   text-align: center;
 }
 
+ul li a:hover {
+  background-color: #111;
+}
+
 /* Dropdown-container */
 .dropdown {
   position: relative;
@@ -108,4 +112,9 @@ table{
 /* Toon het dropdown-menu bij hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Hover-effect voor de dropdown-knop */
+.dropdown:hover .dropbtn {
+  background-color: #111;
 }
