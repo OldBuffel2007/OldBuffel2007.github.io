@@ -75,46 +75,45 @@ table{
   text-align: center;
 }
 
-ul li a:hover {
-  background-color: #111;
+/* Basisstijl voor het ul element */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Dropdown-container */
-.dropdown {
-  position: relative;
+/* Stijl voor de dropdownknop */
+.dropbtn {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: black;
 }
 
-/* Stijl voor de dropdown-content */
+/* Standaard verbergen van het dropdown-menu */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-/* Links binnen de dropdown */
-.dropdown-content a {
-  float: none;
-  color: white;
+/* Stijl voor de dropdown links */
+.dropdown-content li a {
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
 }
 
-/* Hover-effect voor links binnen de dropdown */
-.dropdown-content a:hover {
-  background-color: #575757;
+/* Stijl voor de dropdown links als er overheen wordt gegaan */
+.dropdown-content li a:hover {
+  background-color: #f1f1f1;
 }
 
-/* Toon het dropdown-menu bij hover */
+/* Dropdownknop bij hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-/* Hover-effect voor de dropdown-knop */
-.dropdown:hover .dropbtn {
-  background-color: #111;
 }
