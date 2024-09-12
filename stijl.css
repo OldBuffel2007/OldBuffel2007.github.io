@@ -87,7 +87,7 @@ ul {
   display: block;
   padding: 16px;
   text-decoration: none;
-  color: black;
+  color: rgba(171, 250, 213, 0.718);
 }
 
 /* Standaard verbergen van het dropdown-menu */
