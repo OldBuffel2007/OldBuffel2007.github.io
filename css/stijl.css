@@ -20,6 +20,9 @@ h4 {
 p {
   color: white;
 }
+td {
+  color: #87ebff;
+}
 
 .navbar {
   overflow: hidden;
