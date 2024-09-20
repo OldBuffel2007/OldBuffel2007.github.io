@@ -136,30 +136,31 @@ ul {
   display: block;
 }
 
- /* Second-level dropdown menu (initially hidden) */
- .second-level-content {
+/* Verbergen van tweede-level dropdown */
+.second-level-content {
   display: none;
   position: absolute;
-  left: 0;
-  top: 100%; /* Position it directly below */
-  background-color: #f9f9f9;
+  left: 160px; /* Zorg ervoor dat het submenu rechts van het eerste menu verschijnt */
+  top: 0; /* Of gebruik 'top: 100%' als je het onder de "Logischelaag" wilt */
+  background-color: rgba(171, 250, 213, 0.718);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/* Show the second-level dropdown on hover over "Logischelaag" */
+/* Zichtbaar maken van tweede-level dropdown bij hover over "Logischelaag" */
 .second-level-menu:hover .second-level-content {
   display: block;
 }
 
-.second-level-content a {
+/* Stijl voor tweede-level dropdown links */
+.second-level-content li a {
+  color: rgba(171, 250, 213, 0.718);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  color: black;
 }
 
-.second-level-content a:hover {
-  background-color: #f1f1f1;
+.second-level-content li a:hover {
+  background-color: rgba(11, 8, 8, 0.831);
 }
