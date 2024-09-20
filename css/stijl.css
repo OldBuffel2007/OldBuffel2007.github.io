@@ -135,3 +135,31 @@ ul {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+ /* Second-level dropdown menu (initially hidden) */
+ .second-level-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%; /* Position it directly below */
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Show the second-level dropdown on hover over "Logischelaag" */
+.second-level-menu:hover .second-level-content {
+  display: block;
+}
+
+.second-level-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.second-level-content a:hover {
+  background-color: #f1f1f1;
+}
