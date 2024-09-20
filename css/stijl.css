@@ -140,8 +140,8 @@ ul {
 .second-level-content {
   display: none;
   position: absolute;
-  left: 160px; /* Zorg ervoor dat het submenu rechts van het eerste menu verschijnt */
-  top: 0; /* Of gebruik 'top: 100%' als je het onder de "Logischelaag" wilt */
+  left: 0;
+  top: 100%; 
   background-color: rgba(171, 250, 213, 0.718);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
