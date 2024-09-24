@@ -136,21 +136,23 @@ ul {
   display: block;
 }
 
-/* Verbergen van tweede-level dropdown */
+/* Standaard verbergen van het tweede-level dropdown */
 .second-level-content {
   display: none;
   position: absolute;
-  left: 0;
-  top: 100%; 
-  background-color: rgba(255, 255, 255, 0.718);
+  background-color: rgba(171, 250, 213, 0.718);
+  top: 100%;  /* Plaats het submenu direct onder "Logischelaag" */
+  left: 0;    /* Lijn het submenu uit met de linkerkant van de parent */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  flex-direction: column;
 }
 
-/* Zichtbaar maken van tweede-level dropdown bij hover over "Logischelaag" */
+/* Zichtbaar maken van het submenu bij hover */
 .second-level-menu:hover .second-level-content {
-  display: block;
+  display: flex; /* Toon het submenu en zet de items onder elkaar */
+  flex-direction: column;
 }
 
 /* Stijl voor tweede-level dropdown links */
