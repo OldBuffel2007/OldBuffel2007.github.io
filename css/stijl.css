@@ -42,13 +42,7 @@ td {
   font-size: 17px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+
 
 /* Basis stijlen voor de navigatiebalk */
 ul {
@@ -72,68 +66,30 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropbtn:focus {
   background-color: #111;
 }
 
-/* Dropdown menu */
-.dropdown-content {
-  display: none; /* Verberg het dropdown menu standaard */
+/* Verberg checkboxen */
+.dropdown-checkbox {
+  display: none;
+}
+
+/* Dropdown menu standaard verbergen */
+.dropdown-content, .second-level-content {
+  display: none;
   position: absolute;
-  top: 100%; /* Laat het menu direct onder de parent verschijnen */
-  left: 0;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown-content li {
-  float: none; /* Verwijder float zodat de items verticaal worden weergegeven */
-}
-
-.dropdown-content li a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content li a:hover {
-  background-color: #ddd;
-}
-
-/* Toon het dropdown menu bij hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Tweede niveau dropdown */
-.second-level-menu {
-  position: relative;
-}
-
-.second-level-content {
-  display: none; /* Verberg het tweede niveau standaard */
-  position: absolute;
-  left: 100%; /* Zorg dat het tweede niveau naast de eerste dropdown verschijnt */
-  top: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.second-level-menu:hover .second-level-content {
-  display: block; /* Toon het tweede niveau dropdown menu bij hover */
-}
-
-.second-level-content li {
+.dropdown-content li, .second-level-content li {
   float: none;
 }
 
-.second-level-content li a {
+.dropdown-content li a, .second-level-content li a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -141,6 +97,21 @@ li a:hover, .dropdown:hover .dropbtn {
   text-align: left;
 }
 
-.second-level-content li a:hover {
+.dropdown-content li a:hover, .second-level-content li a:hover {
   background-color: #ddd;
+}
+
+/* Zorg dat het tweede niveau dropdown naast het eerste verschijnt */
+.second-level-content {
+  left: 100%;
+  top: 0;
+}
+
+/* Toon dropdown menu als de checkbox is aangevinkt */
+.dropdown-checkbox:checked + .dropbtn + .dropdown-content {
+  display: block;
+}
+
+.dropdown-checkbox:checked + label + .second-level-content {
+  display: block;
 }
