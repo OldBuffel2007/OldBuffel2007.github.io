@@ -78,7 +78,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Dropdown menu */
 .dropdown-content {
-  display: none; /* Verberg het dropdown-menu standaard */
+  display: none; /* Verberg het dropdown menu standaard */
   position: absolute;
   top: 100%; /* Laat het menu direct onder de parent verschijnen */
   left: 0;
@@ -88,7 +88,6 @@ li a:hover, .dropdown:hover .dropbtn {
   z-index: 1;
 }
 
-/* Stijl voor items binnen het dropdown-menu */
 .dropdown-content li {
   float: none; /* Verwijder float zodat de items verticaal worden weergegeven */
 }
@@ -105,7 +104,7 @@ li a:hover, .dropdown:hover .dropbtn {
   background-color: #ddd;
 }
 
-/* Toon het dropdown-menu bij hover */
+/* Toon het dropdown menu bij hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -130,7 +129,6 @@ li a:hover, .dropdown:hover .dropbtn {
   display: block; /* Toon het tweede niveau dropdown menu bij hover */
 }
 
-/* Stijl voor items binnen het tweede niveau dropdown-menu */
 .second-level-content li {
   float: none;
 }
