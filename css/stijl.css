@@ -100,62 +100,35 @@ ul {
   padding: 0;
 }
 
-/* Stijl voor de dropdownknop */
-.dropbtn {
-  display: block;
-  padding: 16px;
-  text-decoration: none;
-  color: rgba(171, 250, 213, 0.718);
-  position: relative; /* Zorgt ervoor dat de dropdown onder de knop komt */
-}
-
-/* Standaard verbergen van het dropdown-menu */
+/* Dropdown menu */
 .dropdown-content {
-  display: none;
-  position: absolute; /* Houd dit als absolute om het onder de knop te positioneren */
-  background-color: rgba(171, 250, 213, 0.718);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 100%; /* Plaatst het dropdown-menu direct onder de knop */
-  left: 0; /* Zorgt ervoor dat het menu aan de linkerkant van de knop begint */
+    display: none; /* Standaard verborgen */
+    position: absolute; /* Absolute positionering binnen de li */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999; /* Zorg ervoor dat het boven andere elementen verschijnt */
 }
 
-/* Stijl voor de dropdown links */
+/* Stijl voor dropdown items */
+.dropdown-content li {
+    float: none; /* Verwijder de float */
+}
+
 .dropdown-content li a {
-  color: rgba(171, 250, 213, 0.718);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-/* Stijl voor de dropdown links als er overheen wordt gegaan */
 .dropdown-content li a:hover {
-  background-color: rgba(11, 8, 8, 0.831);
+    background-color: #ddd;
 }
 
-/* Dropdownknop bij hover */
+/* Toon het dropdown menu bij hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block; /* Toon het dropdown-menu */
 }
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
-}
-.second-level-menu > li:hover { background: #CCCCCC; }
-
 
