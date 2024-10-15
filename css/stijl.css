@@ -1,29 +1,19 @@
+/* Algemene stijlen voor de pagina */
 body {
-
-    background-color: #333;
-    text-align: center;
+  background-color: #333;
+  text-align: center;
+  margin: 0; /* Verwijder dubbele marges */
 }
 
-body {margin:0;}
-h1 {
+h1, h2, h3, h4, td {
   color: #87ebff;
 }
-h2 {
-  color: #87ebff;
-}
-h3 {
-  color: #87ebff;
-}
-h4 {
-  color: #87ebff;
-}
+
 p {
   color: white;
 }
-td {
-  color: #87ebff;
-}
 
+/* Navigatiebalk stijlen */
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -42,16 +32,15 @@ td {
   font-size: 17px;
 }
 
-/*Hiermee geef ik mijn footer aan*/
+/* Footer stijl */
 .footer {
-  background-color:lightgrey;
+  background-color: lightgrey;
   padding: 3px;
   color: black;
   text-align: center;
 }
 
-
-/* Basis stijlen voor de navigatiebalk */
+/* Basis stijlen voor de navigatiebalk en dropdown */
 ul {
   list-style-type: none;
   margin: 0;
@@ -73,7 +62,7 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropbtn:focus {
+li a:hover, .dropbtn:hover {
   background-color: #111;
 }
 
@@ -115,11 +104,11 @@ li a:hover, .dropbtn:focus {
 }
 
 /* Toon dropdown-menu als de checkbox is aangevinkt */
-.dropdown-checkbox:checked + .dropbtn + .dropdown-content {
+.dropdown-checkbox:checked ~ .dropbtn + .dropdown-content {
   display: block;
 }
 
 /* Toon het tweede dropdown-menu als de tweede checkbox is aangevinkt */
-.dropdown-checkbox:checked + label + .second-level-content {
+.dropdown-checkbox:checked ~ label + .second-level-content {
   display: block;
 }
