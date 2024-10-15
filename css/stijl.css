@@ -1,24 +1,27 @@
 /* Reset de standaardmarges van het hele document */
 body {
   margin: 0;
-  background-color: rgba(129, 196, 232, 0.256); /* Semi-transparante overlay */
-  font-family: Arial, sans-serif; /* Standaard lettertype voor het hele document */
+  background-color: rgba(129, 196, 232, 0.256); /* Semi-transparante achtergrondkleur */
+  font-family: Arial, sans-serif; /* Standaard lettertype */
 }
 
 /* Stijl voor de navigatiebalk */
 .navbar {
   display: flex; /* Flexbox voor horizontale lay-out */
-  justify-content: space-around; /* Ruimte tussen de links gelijkmatig verdelen */
+  justify-content: space-between; /* Ruimte tussen de items */
   align-items: center; /* Verticaal centreren van items */
-  background-color: black; /* Achtergrondkleur van de navigatiebalk */
-  padding: 10px 0; /* Extra ruimte boven en onder de links */
+  background-color: #333; /* Donkere achtergrondkleur */
+  padding: 10px 20px; /* Ruimte rondom de navigatie */
+  position: fixed; /* Vast bovenaan */
+  width: 100%; /* Volledige breedte */
+  top: 0; /* Bovenaan de pagina */
+  z-index: 1000; /* Z-index om boven andere elementen te blijven */
 }
 
 /* Stijl voor koppelingen in de navigatiebalk */
 .navbar a {
   font-size: 16px; /* Lettergrootte voor de links */
   color: white; /* Kleur van de tekst */
-  text-align: center; /* Centreer de tekst */
   padding: 14px 16px; /* Ruimte rondom de links */
   text-decoration: none; /* Verwijder onderstreping */
   transition: background-color 0.3s; /* Zachte overgang voor hover effect */
@@ -26,37 +29,18 @@ body {
 
 /* Stijl voor koppelingen in de navigatiebalk bij hover */
 .navbar a:hover {
-  background: #ddd; /* Achtergrondkleur bij hover */
+  background-color: #ddd; /* Achtergrondkleur bij hover */
   color: rgb(84, 96, 134); /* Kleur van de tekst bij hover */
 }
 
-/* Hoofdinhoud van de pagina */
-.main {
-  padding: 16px;
-  margin-top: 60px; /* Houd rekening met de hoogte van de navigatiebalk */
-}
-
-/* Footer onderaan de pagina */
-footer {
-  background-color: rgb(9, 10, 10);
-  color: #f8f3f3;
-  padding: 15px;
-  text-align: center;
-}
-
-/* Dropdown Button */
+/* Dropdown stijl */
 .dropbtn {
-  background-color: transparent;
+  background-color: #333; /* Zelfde kleur als de navigatiebalk */
   color: white;
-  padding: 16px;
+  padding: 14px 16px;
   font-size: 16px;
   border: none;
-}
-
-/* De container voor de dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
+  cursor: pointer;
 }
 
 /* Dropdown-inhoud (Standaard verborgen) */
@@ -80,7 +64,6 @@ footer {
 /* Verander de kleur van de dropdown-links bij hover */
 .dropdown-content a:hover {
   background-color: #ddd;
-  color: rgb(84, 96, 134);
 }
 
 /* Toon het dropdown-menu bij hover */
@@ -92,4 +75,17 @@ footer {
 .dropdown:hover .dropbtn {
   background: #ddd; 
   color: rgb(84, 96, 134);
+}
+
+/* Hoofdinhoud van de pagina */
+.main {
+  padding: 80px 20px; /* Houd rekening met de hoogte van de navigatiebalk */
+}
+
+/* Footer onderaan de pagina */
+footer {
+  background-color: rgb(9, 10, 10);
+  color: #f8f3f3;
+  padding: 15px;
+  text-align: center;
 }
