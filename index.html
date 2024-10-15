@@ -6,33 +6,23 @@
     </head>
     <body>
 
-        <ul class="top-level-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pagina's/algemene informatie.html">Algemene informatie</a></li>
-            <li><a href="pagina's/binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="pagina's/kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="pagina's/compressie.html">Compressie</a></li>
-            <li><a href="pagina's/Bitmap en vectorafbeeldingen.html">Afbeeldingen</a></li>
-            <li><a href="pagina's/uitlegvideo.html">Uitlegvideo</a></li>
-
-            <!-- Dropdown-menu -->
-            <li class="dropdown">
-                <input type="checkbox" id="dropdown-toggle" class="dropdown-checkbox">
-                <label for="dropdown-toggle" class="dropbtn">Dropdown</label>
-                <ul class="dropdown-content">
-                    <li><a href="pagina's/logischelaag.html">Logische laag</a></li>
-                    <li><a href="pagina's/toepassingslaag.html">Toepassingslaag</a></li>
-                    <li class="second-level-menu">
-                        <input type="checkbox" id="second-dropdown-toggle" class="dropdown-checkbox">
-                        <label for="second-dropdown-toggle">Fysieke laag</label>
-                        <ul class="second-level-content">
-                            <li><a href="#">RAM</a></li>
-                            <li><a href="#">Geheugen</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <nav class="navbar"> <!--dit is de navigatie bar-->
+            <a href="index.html">Homepage</a> <!-- Een koppeling naar de startpagina. -->
+            <a href="pagina's/algemene informatie.html">Algemene informatie</a> <!-- Een koppeling naar de pagina met algemene informatie. -->
+            <a href="pagina's/binairstelsel.html">Binair stelsel</a> <!-- Een koppeling naar de pagina over het binaire stelsel. -->
+            <a href="pagina's/kleurmodellen.html">Kleurmodellen</a> <!-- Een koppeling naar de pagina over kleurmodellen. -->
+            <a href="pagina's/Bitmap en vectorafbeeldingen.html"> Afbeeldingen</a> <!-- Een koppeling naar de pagina over compressie. -->
+            <a href="pagina's/uitlegvideo.html"> Uitlegvideo</a> <!-- Een koppeling naar de pagina over compressie. -->
+            <div class="dropdown">
+                <button class="dropbtn">Computerarchitectuur</button>
+                <div class="dropdown-content">
+                  <a href="pagina's/drielagenmodel.html">Drielagenmodel</a>
+                  <a href="pagina's/fysiekelaag.html">Fysieke laag</a>
+                  <a href="pagina's/logischelaag.html">Logische laag</a>
+                  <a href="pagina's/toepassingslaag.html">Toepassingslaag</a>
+                </div>
+            </div>
+        </nav> <!--hier eindigt de navigatie bar-->
 
         <h1>Het begin van informatica</h1>
         <h4>Welkom op mijn site waar ik verschillende onderwerpen uit ga leggen van informatica</h4>
