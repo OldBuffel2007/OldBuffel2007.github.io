@@ -6,6 +6,11 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Instellingen voor de tekst op de pagina */
+* {
+  text-align: left;
+}
+
 /* Stijl voor de navigatiebalk */
 .navbar {
   background-color: #5186d757;
@@ -14,10 +19,40 @@ body {
   width: 50%;
 }
 
-/* Instellingen voor de tekst op de pagina */
-* {
-  text-align: left;
+/* Stijl voor de navigatiebalk */
+.navbar {
+  background-color: #5186d757;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: url('Afbeeldingen/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  /* Flexbox toepassen voor horizontale lay-out */
+  display: flex;
+  justify-content: space-around; /* Of gebruik space-between of flex-start naar wens */
+  align-items: center;
+  padding: 10px 0; /* Optioneel voor wat extra ruimte aan de boven- en onderkant */
 }
+
+/* Stijl voor koppelingen in de navigatiebalk */
+.navbar a {
+  color: #f9f5f5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  /* Verwijder de float */
+  /* float: left; Niet meer nodig door flexbox */
+}
+
+/* Stijl voor koppelingen in de navigatiebalk bij hover */
+.navbar a:hover {
+  background: #ddd;
+  color: rgb(84, 96, 134);
+}
+
 
 /* Stijl voor koppelingen in de navigatiebalk */
 .navbar a {
