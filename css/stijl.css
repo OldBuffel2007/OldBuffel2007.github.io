@@ -6,12 +6,11 @@ body {
 }
 
 /* Stijl voor de navigatiebalk */
+/* Stijl voor de navigatiebalk */
 .navbar {
   overflow: hidden; /* Voorkomt dat de inhoud uit de balk stroomt */
   background-color: black; /* Achtergrondkleur van de navigatiebalk */
-  position: fixed; /* Vastgezet bovenaan het scherm */
-  top: 0;
-  width: 100%; /* Volledige breedte van de pagina */
+  font-family: Arial, sans-serif; /* Lettertype voor de navigatiebalk */
   display: flex; /* Flexbox voor horizontale lay-out */
   justify-content: space-around; /* Ruimte tussen de links gelijkmatig verdelen */
   align-items: center; /* Verticaal centreren van items */
@@ -20,12 +19,12 @@ body {
 
 /* Stijl voor koppelingen in de navigatiebalk */
 .navbar a {
-  float: left; /* Zorg ervoor dat de links naast elkaar staan */
   font-size: 16px; /* Lettergrootte voor de links */
   color: white; /* Kleur van de tekst */
   text-align: center; /* Centreer de tekst */
   padding: 14px 16px; /* Ruimte rondom de links */
   text-decoration: none; /* Verwijder onderstreping */
+  transition: background-color 0.3s; /* Zachte overgang voor hover effect */
 }
 
 /* Stijl voor koppelingen in de navigatiebalk bij hover */
@@ -33,6 +32,7 @@ body {
   background: #ddd; /* Achtergrondkleur bij hover */
   color: rgb(84, 96, 134); /* Kleur van de tekst bij hover */
 }
+
 
 /* Hoofdinhoud van de pagina */
 .main {
