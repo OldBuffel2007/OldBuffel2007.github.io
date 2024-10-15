@@ -42,6 +42,13 @@ td {
   font-size: 17px;
 }
 
+/*Hiermee geef ik mijn footer aan*/
+.footer {
+  background-color:lightgrey;
+  padding: 3px;
+  color: black;
+  text-align: center;
+}
 
 
 /* Basis stijlen voor de navigatiebalk */
