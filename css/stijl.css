@@ -13,9 +13,6 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-image: url('Afbeeldingen/background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* Instellingen voor de tekst op de pagina */
