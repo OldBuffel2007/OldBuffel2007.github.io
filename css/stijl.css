@@ -10,8 +10,8 @@ body {
 .navbar {
   background-color: #5186d757;
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 100%;
+  width: 50%;
 }
 
 /* Instellingen voor de tekst op de pagina */
