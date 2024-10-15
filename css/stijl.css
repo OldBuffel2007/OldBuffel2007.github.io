@@ -70,12 +70,12 @@ li a:hover, .dropbtn:focus {
   background-color: #111;
 }
 
-/* Verberg checkboxen */
+/* Verberg de checkboxes */
 .dropdown-checkbox {
   display: none;
 }
 
-/* Dropdown menu standaard verbergen */
+/* Dropdown-menu standaard verbergen */
 .dropdown-content, .second-level-content {
   display: none;
   position: absolute;
@@ -107,11 +107,12 @@ li a:hover, .dropbtn:focus {
   top: 0;
 }
 
-/* Toon dropdown menu als de checkbox is aangevinkt */
+/* Toon dropdown-menu als de checkbox is aangevinkt */
 .dropdown-checkbox:checked + .dropbtn + .dropdown-content {
   display: block;
 }
 
+/* Toon het tweede dropdown-menu als de tweede checkbox is aangevinkt */
 .dropdown-checkbox:checked + label + .second-level-content {
   display: block;
 }
