@@ -51,7 +51,7 @@ color: #87ebff;
 
 /*Hiermee geef ik mijn footer aan*/
 .footer {
-background-color:lightgrey;
+background-color:rgb(255, 0, 0);
 padding: 3px;
 color: black;
 text-align: center;
