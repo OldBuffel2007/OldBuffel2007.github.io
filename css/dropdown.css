@@ -33,10 +33,12 @@
   text-align: left;
 }
 
+/* Hover-effect voor links in het dropdownmenu */
 .dropdown-content a:hover {
   background-color: #555; /* Hover achtergrondkleur */
 }
 
+/* Display dropdownmenu bij hover */
 .dropdown:hover .dropdown-content {
   display: block; /* Zorgt ervoor dat het menu zichtbaar wordt bij hover */
 }
