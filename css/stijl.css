@@ -28,6 +28,8 @@ color: #87ebff;
   overflow: hidden;
   background-color: black;
   font-family: Arial, Arial, Arial;
+  z-index: 1000; /* Zorg ervoor dat de navbar boven andere elementen staat */
+  position: relative; /* Maakt z-index effectief */
 }
 
 .navbar a {
@@ -38,6 +40,14 @@ color: #87ebff;
   padding: 14px 16px;
   text-decoration: none;
 }
+
+/* Hover-effect voor navbar links */
+.navbar a:hover {
+  background-color: #555; /* Achtergrondkleur bij hover */
+  color: white; /* Optioneel: tekstopmaak bij hover */
+  transition: background-color 0.3s ease; /* Zorgt voor een soepele overgang */
+}
+
 
 /*Hiermee geef ik mijn footer aan*/
 .footer {
