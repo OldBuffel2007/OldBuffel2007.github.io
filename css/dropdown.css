@@ -19,7 +19,7 @@
   background-color: #333; /* Achtergrondkleur van het dropdownmenu */
   min-width: 160px; /* Minimaal breedte van het menu */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1000; /* Moet hoger zijn dan de navbar z-index */
+  z-index: 1001; /* Moet hoger zijn dan de navbar z-index */
   top: 100%; /* Plaatst het menu direct onder de knop */
   left: 0; /* Zorgt ervoor dat het menu links uitgelijnd is met de knop */
 }
