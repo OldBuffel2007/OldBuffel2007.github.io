@@ -1,37 +1,40 @@
 <!doctype html> <!--dit is de homepage van mijn site-->
 <html> <!--dit is het htlm-element-->
     <head>
-        <link rel="stylesheet" type+"text/css" href="../css/stijl.css"/>
+        <link rel="stylesheet" type="text/css" href="css/stijl.css"/>
+        <link rel="stylesheet" type="text/css" href="css/dropdown.css"/>
         <!--deze link connect deze pagina met css-->
         <title> Logischelaag </title>
 <!--title zorgt ervoor dat je tablad deze naam krijgt-->
     </head>
     <body>
 
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="algemene informatie.html">Algemene informatie</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="compressie.html">Compressie</a></li>
-            <li><a href="Bitmap en vectorafbeeldingen.html">Afbeeldingen</a></li>
-            <li><a href="uitlegvideo.html">Uitlegvideo</a></li>
-            
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Dropdown</a>
-                <ul class="dropdown-content">
-                    <ul class="second-level-menu">
-                    <li><a href="logischelaag.html">Logischelaag</a></li>
-                    <li><a href="toepassingslaag.html">Toepassingslaag</a></li>
-                    <li><a href="fysiekelaag.html">Fysiekelaag</a></li>
-                    </ul>
-                    </ul>
-                    
-            </li>
-                    </ul>
-            </li>
-            </ul>
-        <!--dit zijn mijn links naar andere websites-->
+        <div class="navbar">
+            <a href="index.html">homepage</a>
+            <a href="algemene informatie.html">algemene-info</a>
+            <a href="binairstelsel.html">binair stelsel</a>
+            <a href="kleurmodellen.html">kleurmodellen</a>
+            <a href="Bitmap en vectorafbeeldingen.html">afbeeldingen</a>
+            <a href="compressie.html">compressie</a>
+            <a href="uitlegvideo.html">uitlegvideo</a>
+    
+            <div class="dropdown">
+                <a href="#">Drielagenmodel</a>
+                <div class="dropdown-content">
+                    <a href="fysiekelaag.html">Fysieke laag</a>
+                    <a href="logischlaag.html">Logische laag</a>
+                    <a href="toepassingslaag.html">Toepassingslaag</a>
+                    <a href="specifiekonderwerp.html">Specifiek onderwerp</a>
+                </div>
+            </div>
+        </div>
+        
+
+    <H1>De Logischelaag</H1>
+
+    <h3>Operating system en DBMS</h3>
+
+    <p>Een besturingssysteem (Operating System, OS) is de software die de computerhardware beheert en verschillende taken uitvoert, zoals het beheren van bestanden, processen, geheugen en gebruikersinterfaces. Het zorgt voor beveiliging en maakt het mogelijk dat applicaties efficiënt kunnen draaien. Een Database Management System (DBMS) is software die helpt bij het maken, beheren en bewerken van databases. Het fungeert als een schakel tussen de gebruiker en de database, waardoor gegevens veilig en gemakkelijk kunnen worden opgeslagen en opgevraagd. Samen zorgen het besturingssysteem en het DBMS ervoor dat computers goed functioneren, waarbij het OS de hardware regelt en het DBMS het beheer van gegevens vergemakkelijkt.</p>
 
 
 
