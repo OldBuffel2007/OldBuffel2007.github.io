@@ -19,7 +19,7 @@
   background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 9999; /* Zorgt ervoor dat het dropdown-menu altijd boven andere elementen staat */
+  z-index: 1; /* Zorgt ervoor dat het dropdown-menu altijd boven andere elementen staat */
   top: 100%;
   left: 0;
 }
@@ -43,5 +43,5 @@
 /* Zorg ervoor dat de hoofdcontent een lagere z-index heeft */
 .content {
   position: relative;
-  z-index: 1; /* Lagere z-index dan de navbar en dropdown */
+  z-index: 1000; /* Lagere z-index dan de navbar en dropdown */
 }
