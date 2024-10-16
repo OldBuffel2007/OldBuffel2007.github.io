@@ -25,7 +25,7 @@ color: #87ebff;
 }
 
 .navbar {
-  overflow: hidden;
+  overflow: visible;
   background-color: black;
   font-family: Arial, Arial, Arial;
   z-index: 1000; /* Zorg ervoor dat de navbar boven andere elementen staat */
