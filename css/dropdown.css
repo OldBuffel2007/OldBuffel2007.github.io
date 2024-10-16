@@ -1,44 +1,46 @@
 /* Navbar CSS */
 .navbar {
   position: relative; /* Nodig voor z-index om te werken */
-  background-color: black; /* Achtergrondkleur van de navbar */
-  padding: 15px 20px; /* Verhoogde padding voor meer hoogte */
-  z-index: 1000; /* Zorg ervoor dat de navbar boven andere elementen staat */
-  font-size: 18px; /* Verhoogde font-grootte voor betere leesbaarheid */
+  background-color: black;
+  padding: 15px 20px;
+  z-index: 1000; /* Zorg ervoor dat de navbar boven de meeste andere elementen staat */
 }
 
 /* Dropdownmenu CSS */
 .dropdown {
-  position: relative; /* Zorgt ervoor dat de dropdown zich verhoudt tot dit element */
-  display: inline-block; /* Zorgt ervoor dat het dropdown-menu goed uitgelijnd is */
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-  display: none; /* Standaard niet zichtbaar */
-  position: absolute; /* Positioneert het dropdown-menu onafhankelijk */
-  background-color: #333; /* Achtergrondkleur van het dropdownmenu */
-  min-width: 160px; /* Minimaal breedte van het menu */
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1001; /* Moet hoger zijn dan de navbar z-index */
-  top: 100%; /* Plaatst het menu direct onder de knop */
-  left: 0; /* Zorgt ervoor dat het menu links uitgelijnd is met de knop */
+  z-index: 9999; /* Zorgt ervoor dat het dropdown-menu altijd boven andere elementen staat */
+  top: 100%;
+  left: 0;
 }
 
-/* Dropdown-menu links */
 .dropdown-content a {
-  color: white; /* Kleur van de linktekst */
-  padding: 12px 16px; /* Padding van de links */
-  text-decoration: none; /* Geen onderlijn */
-  display: block; /* Elke link op een nieuwe regel */
-  text-align: left; /* Uitlijning van de linktekst */
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-/* Hover-effect voor links in het dropdownmenu */
 .dropdown-content a:hover {
-  background-color: #555; /* Achtergrondkleur bij hover */
+  background-color: #555;
 }
 
-/* Display dropdownmenu bij hover */
 .dropdown:hover .dropdown-content {
-  display: block; /* Maak het menu zichtbaar bij hover */
+  display: block;
+}
+
+/* Zorg ervoor dat de hoofdcontent een lagere z-index heeft */
+.content {
+  position: relative;
+  z-index: 1; /* Lagere z-index dan de navbar en dropdown */
 }
